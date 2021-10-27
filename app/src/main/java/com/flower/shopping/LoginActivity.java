@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         LoginButton = (Button) findViewById(R.id.login_btn);
         InputPassword = (EditText) findViewById(R.id.login_password_input);
-        InputUsername = (EditText) findViewById(R.id.login_phone_number_input);
+        InputUsername = (EditText) findViewById(R.id.login_username_input);
         AdminLink = (TextView) findViewById(R.id.admin_panel_link);
         NotAdminLink = (TextView) findViewById(R.id.not_admin_panel_link);
         loadingBar = new ProgressDialog(this);
@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(username))
         {
-            Toast.makeText(this, "Please write your phone number...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please write your username...", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(password))
         {
@@ -101,7 +101,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(chkBoxRememberMe.isChecked())
         {
-            Paper.book().write(Prevalent.UserPhoneKey, username);
+            Paper.book().write(Prevalent.UserNameKey, username);
             Paper.book().write(Prevalent.UserPasswordKey, password);
         }
         final DatabaseReference RootRef;
@@ -112,7 +112,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (dataSnapshot.child(parentDbName).child(username).exists()){
 
                     Users usersData = dataSnapshot.child(parentDbName).child(username).getValue(Users.class);
-                    if (usersData.getPhone().equals(username))
+                    if (usersData.getUsername().equals(username))
                     {
                         if (usersData.getPassword().equals(password))
                         {

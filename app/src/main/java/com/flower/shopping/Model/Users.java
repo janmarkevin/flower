@@ -1,18 +1,19 @@
 package com.flower.shopping.Model;
 
 public class Users {
-    private String name, phone, password, image, address;
+    private String username, name, phone, password, image, address;
     public Users()
     {
 
     }
 
-    public Users(String name, String phone, String password, String image, String address) {
+    public Users(String name, String phone, String password, String image, String address, String username) {
         this.name = name;
         this.phone = phone;
         this.password = password;
         this.image = image;
         this.address = address;
+        this.username = username;
     }
 
     public String getName() {
@@ -53,5 +54,13 @@ public class Users {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
