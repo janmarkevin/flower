@@ -28,10 +28,9 @@
         android:layout_marginBottom="10dp"
         android:background="@color/colorPrimaryDark"
         android:text="Check New Orders"
-        android:textColor="@android:color/white"
-        android:textSize="25dp"
         android:textAllCaps="false"
-        />
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/admin_logout_btn"
@@ -43,17 +42,16 @@
         android:layout_marginBottom="15dp"
         android:background="@color/colorPrimaryDark"
         android:text="Logout"
-        android:textColor="@android:color/white"
-        android:textSize="25dp"
         android:textAllCaps="false"
-        />
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
 <!--Button cattegory-->
     <Button
         android:id="@+id/admin_category_birthday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30pt"
         android:layout_marginLeft="10pt"
+        android:layout_marginTop="30pt"
         android:layout_marginRight="10pt"
         android:background="@drawable/input_design"
         android:hint="Birthday's"

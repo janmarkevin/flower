@@ -49,8 +49,8 @@ public class AdminNewOrdersActivity extends AppCompatActivity {
                     protected void onBindViewHolder(@NonNull AdminOrdersViewHolder holder, final int position, @NonNull final AdminOrders model) {
 
                         holder.userName.setText("Name: "+model.getName());
-                        holder.userPhoneNumber.setText("Name: "+model.getPhone());
-                        holder.userTotalPrice.setText("Total Ammount = Rs."+model.getTotalAmount());
+                        holder.userPhoneNumber.setText("Phone Number: "+model.getPhone());
+                        holder.userTotalPrice.setText("Total Amount = "+model.getTotalAmount() + " Peso");
                         holder.userDateTime.setText("Order at: "+model.getDate()+" "+ model.getTime());
                         holder.userShippingAddress.setText("Shipping Address: "+model.getAddress()+", "+model.getCity());
                         holder.showOrdersBtn.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +70,6 @@ public class AdminNewOrdersActivity extends AppCompatActivity {
                                 CharSequence options[] =new CharSequence[]{
                                         "Yes",
                                         "No"
-
                                 };
 
                                 AlertDialog.Builder builder = new AlertDialog.Builder(AdminNewOrdersActivity.this);
