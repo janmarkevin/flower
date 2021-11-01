@@ -10,9 +10,9 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AdminCategoryActivity extends AppCompatActivity {
-    private ImageView tShirts, sportsTShirts, femaleDresses, sweathers;
-    private ImageView glasses, hatsCaps, walletsBagsPurses, shoes;
-    private ImageView headPhonesHandFree, Laptops, watches, mobilePhones;
+//    private ImageView tShirts, sportsTShirts, femaleDresses, sweathers;
+//    private ImageView glasses, hatsCaps, walletsBagsPurses, shoes;
+//    private ImageView headPhonesHandFree, Laptops, watches, mobilePhones;
     private Button LogoutBtn, CheckOrdersBtn;
 
     @Override
@@ -58,136 +58,136 @@ public class AdminCategoryActivity extends AppCompatActivity {
 //        watches = (ImageView) findViewById(R.id.watches);
 //        mobilePhones = (ImageView) findViewById(R.id.mobilephones);
 
-
-        tShirts.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "tShirts");
-                startActivity(intent);
-            }
-        });
-        sportsTShirts.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Sports tShirts");
-                startActivity(intent);
-            }
-        });
-
-
-        femaleDresses.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Female Dresses");
-                startActivity(intent);
-            }
-        });
-
-
-        sweathers.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Sweathers");
-                startActivity(intent);
-            }
-        });
-
-
-        glasses.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Glasses");
-                startActivity(intent);
-            }
-        });
-
-
-        hatsCaps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Hats Caps");
-                startActivity(intent);
-            }
-        });
-
-
-
-        walletsBagsPurses.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Wallets Bags Purses");
-                startActivity(intent);
-            }
-        });
-
-
-        shoes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Shoes");
-                startActivity(intent);
-            }
-        });
-
-
-
-        headPhonesHandFree.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "HeadPhones HandFree");
-                startActivity(intent);
-            }
-        });
-
-
-        Laptops.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Laptops");
-                startActivity(intent);
-            }
-        });
-
-
-        watches.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Watches");
-                startActivity(intent);
-            }
-        });
-
-
-        mobilePhones.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Mobile Phones");
-                startActivity(intent);
-            }
-        });
+//
+//        tShirts.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "tShirts");
+//                startActivity(intent);
+//            }
+//        });
+//        sportsTShirts.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Sports tShirts");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        femaleDresses.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Female Dresses");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        sweathers.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Sweathers");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        glasses.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Glasses");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        hatsCaps.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Hats Caps");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//
+//        walletsBagsPurses.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Wallets Bags Purses");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        shoes.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Shoes");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//
+//        headPhonesHandFree.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "HeadPhones HandFree");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        Laptops.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Laptops");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        watches.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Watches");
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        mobilePhones.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+//                intent.putExtra("category", "Mobile Phones");
+//                startActivity(intent);
+//            }
+//        });
     }
 }
