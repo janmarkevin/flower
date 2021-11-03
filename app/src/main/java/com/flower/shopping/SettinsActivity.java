@@ -101,8 +101,8 @@ public class SettinsActivity extends AppCompatActivity {
         HashMap<String, Object> userMap = new HashMap<>();
         userMap. put("name", fullNameEditText.getText().toString());
         userMap. put("address", addressEditText.getText().toString());
-        userMap. put("phoneOrder", userPhoneEditText.getText().toString());
-        ref.child(Prevalent.currentOnlineUser.getPhone()).updateChildren(userMap);
+        userMap. put("phone", userPhoneEditText.getText().toString());
+        ref.child(Prevalent.currentOnlineUser.getUsername()).updateChildren(userMap);
         startActivity(new Intent(SettinsActivity.this, HomeActivity.class));
         Toast.makeText(SettinsActivity.this, "Profile Info update successfully.", Toast.LENGTH_SHORT).show();
         finish();
@@ -161,7 +161,7 @@ public class SettinsActivity extends AppCompatActivity {
         if (imageUri != null)
         {
             final StorageReference fileRef = storageProfilePrictureRef
-                    .child(Prevalent.currentOnlineUser.getPhone() + ".jpg");
+                    .child(Prevalent.currentOnlineUser.getUsername() + ".jpg");
 
             uploadTask = fileRef.putFile(imageUri);
             uploadTask.continueWithTask(new Continuation() {
@@ -186,7 +186,7 @@ public class SettinsActivity extends AppCompatActivity {
                         userMap. put("address", addressEditText.getText().toString());
                         userMap. put("phoneOrder", userPhoneEditText.getText().toString());
                         userMap. put("image", myUrl);
-                        ref.child(Prevalent.currentOnlineUser.getPhone()).updateChildren(userMap);
+                        ref.child(Prevalent.currentOnlineUser.getUsername()).updateChildren(userMap);
                         progressDialog.dismiss();
                         startActivity(new Intent(SettinsActivity.this, HomeActivity.class));
                         Toast.makeText(SettinsActivity.this, "Profile Info update successfully.", Toast.LENGTH_SHORT).show();
@@ -207,7 +207,7 @@ public class SettinsActivity extends AppCompatActivity {
     }
     private void userInfoDisplay(final CircleImageView profileImageView, final EditText fullNameEditText, final EditText userPhoneEditText, final EditText addressEditText)
     {
-        DatabaseReference UsersRef = FirebaseDatabase.getInstance().getReference().child("Users").child(Prevalent.currentOnlineUser.getPhone());
+        DatabaseReference UsersRef = FirebaseDatabase.getInstance().getReference().child("Users").child(Prevalent.currentOnlineUser.getUsername());
         UsersRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
