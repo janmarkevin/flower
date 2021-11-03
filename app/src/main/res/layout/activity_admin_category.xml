@@ -75,4 +75,19 @@
         android:textColorHint="@color/white"
         android:textSize="19sp" />
 
+    <Button
+        android:id="@+id/admin_category_Funeral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_category_Wedding"
+        android:layout_marginLeft="10pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginRight="10pt"
+        android:background="@drawable/input_design"
+        android:hint="Funeral's"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="19sp" />
+
 </RelativeLayout>

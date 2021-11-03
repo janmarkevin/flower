@@ -43,8 +43,6 @@ public class SearchProductsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 searchInput = inputText.getText().toString();
                 onStart();
-
-
             }
         });
 
@@ -56,7 +54,7 @@ public class SearchProductsActivity extends AppCompatActivity {
         super.onStart();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Products");
         FirebaseRecyclerOptions<Products> options = new FirebaseRecyclerOptions.Builder<Products>()
-                .setQuery(reference.orderByChild("pname").startAt(searchInput), Products.class)
+                .setQuery(reference.orderByChild("category").startAt(searchInput).endAt(searchInput), Products.class)
                 .build();
         FirebaseRecyclerAdapter<Products, ProductViewHolder> adapter =
                 new FirebaseRecyclerAdapter<Products, ProductViewHolder>(options) {

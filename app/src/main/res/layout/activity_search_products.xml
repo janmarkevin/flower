@@ -23,8 +23,8 @@
             android:background="@android:color/white"
             android:hint="Product Name"
             android:padding="9dp"
-            android:textColorHint="@color/colorPrimaryDark"
             android:textColor="@color/colorOnSecondary"
+            android:textColorHint="@color/colorPrimaryDark"
             android:textSize="18dp"
             android:textStyle="bold"
 

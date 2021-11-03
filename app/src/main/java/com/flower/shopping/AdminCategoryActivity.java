@@ -10,7 +10,7 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AdminCategoryActivity extends AppCompatActivity {
-    private Button LogoutBtn, CheckOrdersBtn, WeddingsBtn, BirthdaysBtn;
+    private Button LogoutBtn, CheckOrdersBtn, WeddingsBtn, BirthdaysBtn, FuneralBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,13 +40,14 @@ public class AdminCategoryActivity extends AppCompatActivity {
 
         BirthdaysBtn = (Button) findViewById((R.id.admin_category_birthday));
         WeddingsBtn = (Button) findViewById((R.id.admin_category_Wedding));
+        FuneralBtn = (Button) findViewById((R.id.admin_category_Funeral));
 
         BirthdaysBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
             {
                 Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Birthday");
+                intent.putExtra("category", "birthday");
                 startActivity(intent);
             }
         });
@@ -56,7 +57,17 @@ public class AdminCategoryActivity extends AppCompatActivity {
             public void onClick(View view)
             {
                 Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Weddings");
+                intent.putExtra("category", "wedding");
+                startActivity(intent);
+            }
+        });
+
+        FuneralBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(AdminCategoryActivity.this, com.flower.shopping.AdminAddNewProductActivity.class);
+                intent.putExtra("category", "funeral");
                 startActivity(intent);
             }
         });
