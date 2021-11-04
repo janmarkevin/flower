@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "229124446232",
-    "project_id": "flower-82818",
-    "storage_bucket": "flower-82818.appspot.com"
+    "project_number": "311292403949",
+    "project_id": "flowershop-882b8",
+    "storage_bucket": "flowershop-882b8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:229124446232:android:db4883f67ebc9faec60b6d",
+        "mobilesdk_app_id": "1:311292403949:android:beaf8bff39f3b3dc106ce4",
         "android_client_info": {
-          "package_name": "com.flower.shopping"
+          "package_name": "com.flowershop.shopping"
         }
       },
       "oauth_client": [
         {
-          "client_id": "229124446232-8oqujh4hs9q1tj07fgl1r1f20tla5s8a.apps.googleusercontent.com",
+          "client_id": "311292403949-dg07lgvj0j52ri785n4riftc9eh0ohfk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBmBZv9UcifkNM0MTsU9wGA2EoSzgLgkSk"
+          "current_key": "AIzaSyASStoe8FcAMp4Db_hES8yDxONbMv3d2tQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "229124446232-8oqujh4hs9q1tj07fgl1r1f20tla5s8a.apps.googleusercontent.com",
+              "client_id": "311292403949-dg07lgvj0j52ri785n4riftc9eh0ohfk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

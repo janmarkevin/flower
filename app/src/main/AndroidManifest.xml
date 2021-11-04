@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.flower.shopping">
+    package="com.flowershop.shopping">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -14,21 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ekart"
         tools:replace="android:theme">
-        <activity android:name="com.flower.shopping.HomeActivity"
+        <activity android:name="com.flowershop.shopping.HomeActivity"
 
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name="com.flower.shopping.SettinsActivity" />
-        <activity android:name="com.flower.shopping.SearchProductsActivity" />
-        <activity android:name="com.flower.shopping.RegisterActivity" />
-        <activity android:name="com.flower.shopping.ProductDetailsActivity" />
-        <activity android:name="com.flower.shopping.LoginActivity" />
-        <activity android:name="com.flower.shopping.ConfirmFinalOrderActivity" />
-        <activity android:name="com.flower.shopping.CartActivity" />
-        <activity android:name="com.flower.shopping.AdminUserProductsActivity" />
-        <activity android:name="com.flower.shopping.AdminNewOrdersActivity" />
-        <activity android:name="com.flower.shopping.AdminCategoryActivity" />
-        <activity android:name="com.flower.shopping.AdminAddNewProductActivity" />
-        <activity android:name="com.flower.shopping.MainActivity">
+        <activity android:name="com.flowershop.shopping.SettinsActivity" />
+        <activity android:name="com.flowershop.shopping.SearchProductsActivity" />
+        <activity android:name="com.flowershop.shopping.RegisterActivity" />
+        <activity android:name="com.flowershop.shopping.ProductDetailsActivity" />
+        <activity android:name="com.flowershop.shopping.LoginActivity" />
+        <activity android:name="com.flowershop.shopping.ConfirmFinalOrderActivity" />
+        <activity android:name="com.flowershop.shopping.CartActivity" />
+        <activity android:name="com.flowershop.shopping.AdminUserProductsActivity" />
+        <activity android:name="com.flowershop.shopping.AdminNewOrdersActivity" />
+        <activity android:name="com.flowershop.shopping.AdminCategoryActivity" />
+        <activity android:name="com.flowershop.shopping.AdminAddNewProductActivity" />
+        <activity android:name="com.flowershop.shopping.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
